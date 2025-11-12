@@ -1,0 +1,146 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: linear-gradient(90deg, #d62828, #f77f00);
+  color: #fff;
+  text-align: left;
+  padding: 2rem 4rem;
+}
+
+.container {
+  padding: 2rem 5%;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1.5rem;
+}
+
+.profile-info h2 {
+  margin: 0;
+  color: #333;
+}
+
+.profile-actions .btn {
+  margin-left: 0.5rem;
+}
+
+.profile-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  flex: 1;
+}
+
+label {
+  font-weight: 500;
+  margin-top: 0.75rem;
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+}
+
+textarea {
+  height: 80px;
+}
+
+.toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.75rem 0;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  margin: 2rem 0;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn.red {
+  background-color: #d62828;
+  color: white;
+}
+
+.btn.gray {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.btn.danger {
+  background-color: #780000;
+  color: white;
+}
+
+.footer {
+  background-color: #0c0d14;
+  color: #fff;
+  padding: 3rem 5%;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer .logo {
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  color: #f77f00;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  color: #bbb;
+  font-size: 0.9rem;
+}
