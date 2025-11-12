@@ -3,16 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peta Lokasi - SIPADAM</title>
+  <title>Peta Pemantauan Kebakaran - SIPADAM</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .map-container {
+      max-width: 700px;
+      margin: 100px auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .map-container h2 {
+      color: #e63946;
+      margin-bottom: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .btn-beranda {
+      display: inline-block;
+      margin-top: 25px;
+      background: #e63946;
+      color: #fff;
+      padding: 12px 26px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn-beranda:hover {
+      background: #c92a2a;
+      transform: translateY(-3px);
+    }
+  </style>
 </head>
 <body>
+
   <div class="map-container">
     <h2>Peta Pemantauan Kebakaran</h2>
+
+    <!-- Google Maps Embed (otomatis bisa di-zoom, geser, klik) -->
     <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.996292433204!2d106.81666647492376!3d-6.207487993778361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e3d4e4b3d7%3A0x7e4b8ecf15b0db6f!2sJakarta!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
-      width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy">
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.267838526044!2d106.82688097422126!3d-6.214620993777192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3eae8a845c7%3A0x5cb6dbb0f9a81a0!2sJakarta!5e0!3m2!1sid!2sid!4v1699301200000!5m2!1sid!2sid"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
     </iframe>
+
+    <!-- Tombol kembali -->
+    <a href="index.html" class="btn-beranda">← Kembali ke Beranda</a>
   </div>
+
 </body>
 </html>
