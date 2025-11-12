@@ -9,7 +9,7 @@
 <body>
   <div class="laporan-container">
     <h2>Laporkan Kejadian Kebakaran</h2>
-    <form>
+    <form id="laporanForm">
       <label>Lokasi (GPS)</label>
       <input type="text" placeholder="-6.2088, 106.8456 (Terdeteksi otomatis)" readonly>
 
@@ -19,5 +19,29 @@
       <button type="submit" class="btn-lapor">Kirim Laporan</button>
     </form>
   </div>
+
+  <!-- Popup notifikasi -->
+  <div id="popup" class="popup">
+    <p>Laporan berhasil terkirim!</p>
+  </div>
+
+  <script>
+    const form = document.getElementById("laporanForm");
+    const popup = document.getElementById("popup");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault(); // mencegah reload form
+
+      // Tampilkan popup
+      popup.classList.add("show");
+
+      // Hilangkan popup setelah 2.5 detik
+      setTimeout(() => {
+        popup.classList.remove("show");
+        // Kembali ke beranda setelah popup hilang
+        window.location.href = "index.html"; // ganti sesuai nama file beranda kamu
+      }, 2500);
+    });
+  </script>
 </body>
 </html>
