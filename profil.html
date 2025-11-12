@@ -1,104 +1,109 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SIPADAM - Sistem Informasi Peringatan Dini Api</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Pengguna - SIPADAM</title>
+  <link rel="stylesheet" href="profil.css" />
 </head>
 <body>
-  <header class="navbar">
-    <div class="container">
-      <div class="logo">🚒 SIPADAM</div>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">Beranda</a></li>
-          <li><a href="peta.html">Peta</a></li>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="profil.html">Profil</a></li>
-        </ul>
-      </nav>
-    </div>
+  <!-- Header -->
+  <header class="header">
+    <h1>Profil Pengguna</h1>
+    <p>Kelola informasi akun, pengaturan keamanan, dan preferensi sistem SIPADAM Anda</p>
   </header>
 
-<section class="hero">
-  <div class="overlay"></div>
-  <div class="hero-content">
-    <h1>Sistem Informasi Peringatan Dini Api Terintegrasi Pemadam</h1>
-    <p>Laporakan kebakaran dengan cepat dan akurat. Hubungkan masyarakat dengan petugas pemadam untuk respons darurat yang efektif.</p>
-    <div class="hero-action">
-      <a href="laporan.html" class="btn-lapor">🔥 LAPORKAN KEBAKARAN</a>
+  <!-- Konten Utama -->
+  <main class="container">
+    <section class="profile-card">
+      <div class="profile-header">
+        <img src="user-avatar.png" alt="Foto Profil" class="profile-pic" />
+        <div class="profile-info">
+          <h2>Si Akbar</h2>
+          <p>Kepala Regu Pemadam Kebakaran</p>
+          <p>Dinas Pemadam Kebakaran Jakarta Pusat</p>
+          <p><a href="mailto:budi.santoso@damkar.jakarta.go.id">budi.santoso@damkar.jakarta.go.id</a> | +62 812-3456-7890</p>
+        </div>
+        <div class="profile-actions">
+          <button class="btn red">✎ Edit Profil</button>
+          <button class="btn gray">⬇ Ekspor Data</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="profile-content">
+      <div class="personal-info card">
+        <h3>Informasi Personal</h3>
+        <label>Nama Lengkap</label>
+        <input type="text" value="Budi Santoso" readonly />
+
+        <label>Email</label>
+        <input type="email" value="budi.santoso@damkar.jakarta.go.id" readonly />
+
+        <label>Nomor Telepon</label>
+        <input type="text" value="+62 812-3456-7890" readonly />
+
+        <label>Tanggal Lahir</label>
+        <input type="text" value="15/03/1985" readonly />
+
+        <label>Alamat Lengkap</label>
+        <textarea readonly>Jl. Merdeka Raya No. 45, Kelurahan Gambir, Kecamatan Gambir, Jakarta Pusat 10110</textarea>
+      </div>
+
+      <div class="notification-settings card">
+        <h3>Pengaturan Notifikasi</h3>
+        <div class="toggle">
+          <label>Email Laporan Baru</label>
+          <input type="checkbox" checked />
+        </div>
+        <div class="toggle">
+          <label>Push Notification</label>
+          <input type="checkbox" checked />
+        </div>
+        <div class="toggle">
+          <label>SMS Darurat</label>
+          <input type="checkbox" />
+        </div>
+        <div class="toggle">
+          <label>Ringkasan Harian</label>
+          <input type="checkbox" />
+        </div>
+      </div>
+    </section>
+
+    <div class="button-group">
+      <button class="btn red">💾 Simpan Perubahan</button>
+      <button class="btn gray">✖ Batalkan</button>
+      <button class="btn danger">🗑 Hapus Akun</button>
     </div>
-  </div>
-</section>
+  </main>
 
-<!-- Kontak Darurat -->
-<section class="kontak-darurat">
-  <h2>Kontak Darurat</h2>
-  <p>Hubungi layanan darurat terdekat</p>
-
-  <div class="kontak-cards">
-    <div class="kontak-card pemadam">
-      <div class="icon">🔥</div>
-      <h3>Pemadam Kebakaran</h3>
-      <h1>113</h1>
-      <p>Layanan pemadam kebakaran 24 jam</p>
-    </div>
-
-    <div class="kontak-card polisi">
-      <div class="icon">🚓</div>
-      <h3>Kepolisian</h3>
-      <h1>110</h1>
-      <p>Bantuan keamanan dan ketertiban</p>
-    </div>
-
-    <div class="kontak-card ambulan">
-      <div class="icon">🏥</div>
-      <h3>Ambulans</h3>
-      <h1>118</h1>
-      <p>Layanan medis darurat</p>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-brand">
-      <h3 class="footer-logo">SIPADAM</h3>
-      <p>Sistem Informasi Peringatan Dini Api Terintegrasi Pemadam - Melayani masyarakat dengan respons cepat dan akurat untuk keadaan darurat kebakaran.</p>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h2 class="logo">SIPADAM</h2>
+        <p>Sistem Informasi Peringatan Dini Api Terintegrasi Pemadam - Melayani masyarakat dengan respons cepat dan akurat untuk keadaan darurat kebakaran.</p>
+      </div>
+      <div>
+        <h3>Layanan</h3>
+        <ul>
+          <li>Laporan Kebakaran</li>
+          <li>Peta Lokasi</li>
+          <li>Riwayat Laporan</li>
+          <li>Notifikasi</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Kontak</h3>
+        <p>📞 (021) 113-114-115</p>
+        <p>📧 info@sipadam.go.id</p>
+        <p>📍 Jakarta, Indonesia</p>
       </div>
     </div>
-
-    <div class="footer-links">
-      <h4>Layanan</h4>
-      <ul>
-        <li><a href="#">Laporan Kebakaran</a></li>
-        <li><a href="#">Peta Lokasi</a></li>
-        <li><a href="#">Riwayat Laporan</a></li>
-        <li><a href="#">Notifikasi</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <p>© 2025 SIPADAM. Semua hak dilindungi. Dikembangkan untuk keselamatan masyarakat Indonesia.</p>
     </div>
-
-    <div class="footer-contact">
-      <h4>Kontak</h4>
-      <ul>
-        <li>📞 (021) 113-114-115</li>
-        <li>📧 info@sipadam.go.id</li>
-        <li>📍 Jakarta, Indonesia</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2025 SIPADAM. Semua hak dilindungi. Dikembangkan untuk keselamatan masyarakat Indonesia.</p>
-  </div>
-</footer>
-
+  </footer>
 </body>
 </html>
