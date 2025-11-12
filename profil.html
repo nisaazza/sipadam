@@ -3,18 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profil - SIPADAM</title>
+  <title>SIPADAM - Sistem Informasi Peringatan Dini Api</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="profil-container">
-    <h2>Profil Pengguna</h2>
-    <div class="profil-box">
-      <p><strong>Nama:</strong> Nisa</p>
-      <p><strong>Email:</strong> nisa@example.com</p>
-      <p><strong>Peran:</strong> Pengguna Terdaftar</p>
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">🚒 SIPADAM</div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="peta.html">Peta</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="profil.html">Profil</a></li>
+        </ul>
+      </nav>
     </div>
-    <button class="btn-lapor">Keluar</button>
+  </header>
+
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Sistem Informasi Peringatan Dini Api Terintegrasi Pemadam</h1>
+    <p>Laporakan kebakaran dengan cepat dan akurat. Hubungkan masyarakat dengan petugas pemadam untuk respons darurat yang efektif.</p>
+    <div class="hero-action">
+      <a href="laporan.html" class="btn-lapor">🔥 LAPORKAN KEBAKARAN</a>
+    </div>
   </div>
+</section>
+
+<!-- Kontak Darurat -->
+<section class="kontak-darurat">
+  <h2>Kontak Darurat</h2>
+  <p>Hubungi layanan darurat terdekat</p>
+
+  <div class="kontak-cards">
+    <div class="kontak-card pemadam">
+      <div class="icon">🔥</div>
+      <h3>Pemadam Kebakaran</h3>
+      <h1>113</h1>
+      <p>Layanan pemadam kebakaran 24 jam</p>
+    </div>
+
+    <div class="kontak-card polisi">
+      <div class="icon">🚓</div>
+      <h3>Kepolisian</h3>
+      <h1>110</h1>
+      <p>Bantuan keamanan dan ketertiban</p>
+    </div>
+
+    <div class="kontak-card ambulan">
+      <div class="icon">🏥</div>
+      <h3>Ambulans</h3>
+      <h1>118</h1>
+      <p>Layanan medis darurat</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h3 class="footer-logo">SIPADAM</h3>
+      <p>Sistem Informasi Peringatan Dini Api Terintegrasi Pemadam - Melayani masyarakat dengan respons cepat dan akurat untuk keadaan darurat kebakaran.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h4>Layanan</h4>
+      <ul>
+        <li><a href="#">Laporan Kebakaran</a></li>
+        <li><a href="#">Peta Lokasi</a></li>
+        <li><a href="#">Riwayat Laporan</a></li>
+        <li><a href="#">Notifikasi</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Kontak</h4>
+      <ul>
+        <li>📞 (021) 113-114-115</li>
+        <li>📧 info@sipadam.go.id</li>
+        <li>📍 Jakarta, Indonesia</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 SIPADAM. Semua hak dilindungi. Dikembangkan untuk keselamatan masyarakat Indonesia.</p>
+  </div>
+</footer>
+
 </body>
 </html>
